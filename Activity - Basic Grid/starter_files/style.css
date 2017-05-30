@@ -1,0 +1,159 @@
+/*
+    BACKGROUND COLORS
+
+    mobile  : #bff
+    tablet  : #fcf
+    desktop : #ff9
+
+    BREAKPOINTS
+
+    tablet  : 700px
+    desktop : 1000px
+*/
+
+/*** Default Mobile Styles ****************************/
+body{
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+li {
+  background-color: #bff;
+  margin: 2%;
+  padding: 2%;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+ul {
+  margin-left: -9%;
+
+}
+
+.inner li {
+  background-color: white;
+  padding: 3%;
+}
+
+
+/**** Tablet Styles ***********************************/
+
+@media (min-width: 700px) {
+  body {
+    margin-left: 4.5%;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  li {
+    background-color: #fcf;
+    margin: .5%;
+  }
+
+  li:nth-child(1) {
+    width: 45%;
+  }
+
+  li:nth-child(2) {
+    width: 45%;
+  }
+
+  li:nth-child(5) {
+    width: 45%;
+  }
+
+  li:nth-child(6) {
+    width: 45%;
+  }
+
+  .inner li:nth-child(1) {
+    width: 43%;
+  }
+
+  .inner li:nth-child(2) {
+    width: 43%;
+  }
+
+  .inner li:nth-child(3) {
+    width: 43%;
+  }
+
+  .inner li:nth-child(4) {
+    width: 43%;
+  }
+
+  .inner ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -40px;
+  }
+}
+/**** Desktop Styles ***********************************/
+@media (min-width: 1000px) {
+  body {
+    margin-left: 5.5%;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  li {
+    background-color: #ff9;
+    margin: .5%;
+  }
+
+  li:nth-child(1) {
+    width: 15%;
+  }
+
+  li:nth-child(2) {
+    width: 15%;
+  }
+
+  li:nth-child(3) {
+    width: 15%;
+  }
+
+  li:nth-child(5) {
+    width: 15%;
+  }
+
+  li:nth-child(6) {
+    width: 15%;
+  }
+
+  .inner {
+    order: -1;
+  }
+
+  .inner ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .inner li:nth-child(1) {
+    width: 23%;
+  }
+
+  .inner li:nth-child(2) {
+    width: 23%;
+  }
+
+  .inner li:nth-child(3) {
+    width: 23%;
+  }
+
+  .inner li:nth-child(4) {
+    width: 23%;
+  }
+}
